@@ -1,0 +1,122 @@
+CREATE DATABASE Airlines;
+
+CREATE TABLE Workers
+(W_name VARCHAR(15),
+W_id int,
+Department VARCHAR(15), 
+Salary int,
+Age int , 
+PRIMARY KEY(W_id));
+
+INSERT INTO Workers (W_name, W_id , Department , Salary, Age) VALUES
+('raj',1011, 'lugguage', 20000, 30),
+('rahul',1066,'ticket_counter', 11000, 32),
+('ram',1033,'security',12000, 35);
+
+
+CREATE TABLE Airport
+(AP_Name VARCHAR(80) NOT NULL,
+State VARCHAR(15), 
+Country VARCHAR(30),
+City VARCHAR(30),
+PRIMARY KEY(AP_Name));
+
+-
+
+INSERT INTO Airport
+(AP_Name, State, Country, City) VALUES
+('Chandigarh International Airport','Chandigarh','India','Chandigarh'),
+('Indira GandhiInternational Airport','Delhi','India','Delhi'),
+('Chhatrapati Shivaji International Airport','Maharashtra','India','Mumbai');
+
+
+CREATE TABLE flight
+( Flight_no int NOT NULL,
+Arrival_hr VARCHAR(50),
+Departure_hr VARCHAR(3),
+PRIMARY KEY(flight_no),
+FOREIGN KEY(t_id) REFERENCES ticket (t_id));
+
+INSERT INTO flight (Flight_no, Arrival_hr, Departure_hr) VALUES
+(1566,'9:00 am','9:30 am'),
+(1563,'2:00 pm' ,'2:30 pm '),
+(1668,'6:00 pm' ,'6:30 pm');
+
+CREATE TABLE flight_company
+(fc_name VARCHAR(20) NOT NULL,
+main_location VARCHAR(80) NOT NULL,
+PRIMARY KEY(fc_name));
+
+INSERT INTO flight_company (fc_name, main_location) VALUES
+('vistara','delhi'),
+('airindia', 'mumbai'),
+('starquick','chandigarh');
+
+
+CREATE TABLE Stores
+(S_id int,
+S_name varchar(50),
+Product varchar(60),
+PRIMARY KEY(S_id));
+
+
+INSERT INTO Stores(S_id,S_name,Product) VALUES
+('1508', 'FBindia','jeans'),
+('809', 'maxus', 'tshirt'),
+('569', 'silver', 'dresses');
+
+CREATE TABLE Ticket
+(T_ID INT NOT NULL,
+P_name VARCHAR(10) NOT NULL,
+Destination VARCHAR(10),
+Business_class VARCHAR(50),
+Economic_class VARCHAR(40),
+PRIMARY KEY(T_id));
+
+INSERT INTO Ticket(T¬_ID,P_name,Destination,Business_class,Economic_class) VALUES
+(589,'Radha','chandigarh','Economic_class'),
+(600,'Shruti','delhi','Business_class'),
+(989,'Ritika','mumbai', 'Economic_name');
+
+CREATE TABLE Booking_agent
+(B_id int NOT NULL,
+Agent_NAME VARCHAR(20),
+PRIMARY KEY(B_id));
+
+
+INSERT INTO Booking_agent(B_id,Agent_name,)
+VALUES
+(5890,'raju'),
+(5995,'sahil'),
+(6008,'krishna');
+
+CREATE TABLE Passenger
+( P_id int,
+  P_name VARCHAR(20),
+  P_age int,
+  P_mobileno int,
+  P_address VARCHAR(60),
+  PRIMARY KEY(P_id));
+
+
+INSERT INTO Passenger (P_id,P_name,P_age, P_mobileno,P_address,)
+VALUES
+(123,'Radha',18,866665909,'202 /sai samarth'),
+(365,'Shruti',19, 936822985,'306/ krishan circle'),
+(986,'Ritika',20, 989645580,'508/ ram vatika');
+ 
+CREATE TABLE delete
+(delete_id int);
+
+INSERT INTO delete(delete_id) values
+(1008);
+
+SELECT* FROM delete;
+
+TRUNCATE TABLE delete;
+
+SELECT* FROM delete;
+
+DROP TABLE delete ;
+ 
+SELECT* FROM delete;
