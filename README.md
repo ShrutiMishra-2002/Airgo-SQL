@@ -41,8 +41,4 @@ Airport Management System
 If you have any feedback, please reach out to us at shrutidmishra2002@gmail.com
 
   
-## Feedback
-
-If you have any feedback, please reach out to us at shrutidmishra2002@gmail.com
-
 
