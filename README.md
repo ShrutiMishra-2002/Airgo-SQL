@@ -1,6 +1,8 @@
 # Airgo-SQL
 This project is a SQL based project for an Airport Management System
 
+<img src="images/airgosql.jpeg" alt="logo" width="500px" height="600px">
+
 
 Aviation industry is the business sector that manufactures, maintains, and operates the aircrafts and the airports. When it comes to aviation, there is a broad range of responsibilities within. It comprises activities at the airport as well as in the aircraft. It involves ground duties that are required to perform before the flight takes off, the activities during the flight, and the activities after it lands.
 
@@ -18,12 +20,12 @@ AirGo SQL will make airport management system more understandable for the custom
 ## Content
 
 <h1> ER diagram </h1>
-<img src="erdiagram.jpeg" alt="erdiagram" width="800px" height="500px">
+<img src="images/erdiagram.jpeg" alt="erdiagram" width="800px" height="500px">
 <br><br><br>
 
 <h1> Relational Schema </h1>
 
-<img src="relationalschema.jpeg" alt="relationalschema" width="800px" height="500px">
+<img src="images/relationalschema.jpeg" alt="relationalschema" width="800px" height="500px">
 
 ## FAQ
 
